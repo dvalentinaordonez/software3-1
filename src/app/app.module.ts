@@ -21,6 +21,7 @@ import {MatSnackBarModule, SimpleSnackBar} from '@angular/material/snack-bar';
 import {MatExpansionModule} from '@angular/material/expansion';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { LoginComponent } from './components/login/login.component';
+import { AdminComponent } from './components/admin/admin.component';
 
 
 
@@ -31,7 +32,8 @@ import { LoginComponent } from './components/login/login.component';
     AddEmpresasComponent,
     ListEmpresasComponent,
     DetailsEmpresasComponent,
-    LoginComponent
+    LoginComponent,
+    AdminComponent
  
   ],
   imports: [

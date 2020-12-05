@@ -1,16 +1,20 @@
-<p>
-  <mat-toolbar color="primary">
-    <mat-toolbar-row>
-      <span>Gestionar Empresa</span>
-      <span class="example-spacer"></span>
-      <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-        <mat-icon>menu</mat-icon>
-      </button>
-    </mat-toolbar-row>
+<nav class="navbar navbar-expand-md bg-primary navbar-dark">
+  <!-- Brand -->
+  <a class="navbar-brand">Gestionar Empresa</a>
 
+  <!-- Toggler/collapsibe Button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+  </button>
 
-  </mat-toolbar>
-</p>
+  <!-- Navbar links -->
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+
+      <button style="float: right;" class="btn btn-primary" routerLink="/admin" type="button">ADMIN</button>
+      <button style="float: right;" class="btn btn-primary" routerLink="/add" type="button">EMPRESA</button>
+
+  </div>
+</nav>
 
 <body>
 

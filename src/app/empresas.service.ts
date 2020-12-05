@@ -32,4 +32,8 @@ consulta(empresa:any){
 recuperarLogin() {
   return this.http.get(`${this.url}login.php`);
 }
+recuperarAdmin() {
+  return this.http.get(`${this.url}admin.php`);
+}
+
 }

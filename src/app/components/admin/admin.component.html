@@ -1,0 +1,54 @@
+<nav class="navbar navbar-expand-md bg-primary navbar-dark">
+    <!-- Brand -->
+    <a class="navbar-brand">Gestionar Empresa</a>
+
+    <!-- Toggler/collapsibe Button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar links -->
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+
+        <button style="float: right;" class="btn btn-primary" routerLink="/admin" type="button">ADMIN</button>
+        <button style="float: right;" class="btn btn-primary" routerLink="/add" type="button">EMPRESA</button>
+
+    </div>
+</nav>
+
+ 
+<div class="table-responsive">
+
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">Tipo doc</th>
+            <th scope="col">Identificacion</th>
+            <th scope="col">Nombre usuario</th>
+            <th scope="col">Apellido usuario</th>
+            <th scope="col">Direccion usuario</th>
+            <th scope="col">Telefono susuario</th>
+            <th scope="col">Email usuario</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let art of listAdmin">
+            <td>{{art.tipo_doc}}</td>
+            <td>{{art.doc_usuario}}</td>
+            <td>{{art.nombre_usuario}}</td>
+            <td>{{art.apellido_usuario}}</td>
+            <td>{{art.direccion_usuario}}</td>
+            <td>{{art.telefono_usuario}}</td>
+            <td>{{art.email_usuario}}</td>
+
+
+        </tr>
+    </tbody>
+
+</table>
+
+
+</div>
+
+ 
